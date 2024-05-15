@@ -1,0 +1,8 @@
+Create an RFM Model by:
+Create the amount the amount spent column
+create a pivot table to aggregate the data with the customer id, sum of amount spent, count of invoice no., Max of InvoiceDate
+copy from the pivot table into another sheet (analysis) and rename as follows: sum of amount spent (Monetary), count of invoice no. (Frequency), and from the Max of InvoiceDate & Current Date column create the Recency column, using the DATEDIF() function, to form the RFM variables.
+create a score column for each variable (Monetary score, Frequency score, and Recency score) using the PERCENTRANK.INC function
+Create an RFM column to sum the total of scores for each raw.
+Create an RFM Score column to rank the sum of scores
+Create a lookuptable with the different customer segments (Top Customers, Loyal Customers, At Risk/Need Attention, Immediate Attention), of which the newly created column "Segment Name" will fetch the customer segment from the lookup table.
